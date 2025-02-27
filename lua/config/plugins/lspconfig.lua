@@ -21,6 +21,7 @@ return {
             local capabilities = require('blink.cmp').get_lsp_capabilities()
             local lspconfig = require('lspconfig')
             lspconfig.lua_ls.setup({ capabilites = capabilities })
+            lspconfig.pyright.setup({ capabilites = capabilities })
         end
     },
     {
