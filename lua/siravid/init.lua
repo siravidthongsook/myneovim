@@ -2,6 +2,8 @@ require("siravid.remap")
 
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.cmd("set signcolumn=yes")
+vim.opt.scrolloff = 5
 
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4

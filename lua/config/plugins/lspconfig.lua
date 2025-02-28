@@ -22,6 +22,18 @@ return {
             local lspconfig = require('lspconfig')
             lspconfig.lua_ls.setup({ capabilites = capabilities })
             lspconfig.pyright.setup({ capabilites = capabilities })
+            lspconfig.clangd.setup({ capabilites = capabilities })
+
+
+            vim.diagnostic.config({
+                signs= {
+                    text = {
+                        [vim.diagnostic.severity.ERROR] = 'E',
+                        [vim.diagnostic.severity.WARN] = 'W'
+                    }
+                },
+                virtual_text = true,
+            })
         end
     },
     {
