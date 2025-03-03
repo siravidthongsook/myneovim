@@ -23,6 +23,17 @@ return {
             lspconfig.lua_ls.setup({ capabilites = capabilities })
             lspconfig.pyright.setup({ capabilites = capabilities })
             lspconfig.clangd.setup({ capabilites = capabilities })
+            lspconfig.eslint.setup({
+                capabilites = capabilities
+            })
+            lspconfig.ts_ls.setup({
+                capabilities = capabilities,
+                init_options = {
+                    preferences = {
+                        disableSuggestions = false,
+                    }
+                }
+            })
 
 
             vim.diagnostic.config({
