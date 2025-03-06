@@ -3,7 +3,8 @@ vim.g.mapleader = " "
 
 
 -- main
-vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>fe", ":Oil --float<CR>")
 
 -- undo tree
 vim.keymap.set("n", "<leader>uo", vim.cmd.UndotreeToggle)

@@ -46,6 +46,9 @@ return {
           }
         },
         snippets = { preset = 'luasnip' },
+        signature = {
+            enabled = true,                     -- Activate signature help
+        },
 
 
         -- See the fuzzy documentation for more information
