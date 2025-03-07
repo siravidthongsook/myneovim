@@ -10,16 +10,6 @@ return {
             ['<C-space>'] = { 'show', 'show_documentation', 'hide_documentation' },
             ['<C-e>'] = { 'hide' },
             ['<C-y>'] = { 'select_and_accept' },
-            ['<Tab>'] = {
-                function(cmp)
-                    if cmp.snippet_active() then return cmp.accept()
-                    else return
-                    end
-                end,
-                'snippet_forward',
-                'fallback'
-            },
-
             ['<Up>'] = { 'select_prev', 'fallback' },
             ['<Down>'] = { 'select_next', 'fallback' },
             ['<C-p>'] = { 'select_prev', 'fallback_to_mappings' },
@@ -41,7 +31,7 @@ return {
 
           providers = {
               snippets = {
-                  score_offset = 4
+                  score_offset = 1
               }
           }
         },

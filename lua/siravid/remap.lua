@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 
 -- main
 -- vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>fe", ":Oil --float<CR>")
+vim.keymap.set("n", "<leader>fe", "<CMD>Oil<CR>")
 
 -- undo tree
 vim.keymap.set("n", "<leader>uo", vim.cmd.UndotreeToggle)
@@ -53,8 +53,8 @@ vim.keymap.set("v", "Y", function()
   vim.fn.setpos(".", pos)
 end, { noremap = true })
 
-vim.keymap.set("n", "<leader>j", ":cnext<CR>")
-vim.keymap.set("n", "<leader>h", ":cprev<CR>")
+vim.keymap.set("n", "<leader>j", "<CMD>cnext<CR>")
+vim.keymap.set("n", "<leader>h", "<CMD>cprev<CR>")
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 vim.keymap.set("n", "<leader>wq", "wq<CR>")
 vim.keymap.set("n", "<leader>Q", ":q!")
