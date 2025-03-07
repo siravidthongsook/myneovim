@@ -18,6 +18,7 @@ return {
             ['<C-b>'] = { 'scroll_documentation_up', 'fallback' },
             ['<C-f>'] = { 'scroll_documentation_down', 'fallback' },
 
+            ['<Tab>'] = { 'snippet_forward', 'fallback' },
             ['<S-Tab>'] = { 'snippet_backward', 'fallback' },
 
             ['<C-k>'] = { 'show_signature', 'hide_signature', 'fallback' },
