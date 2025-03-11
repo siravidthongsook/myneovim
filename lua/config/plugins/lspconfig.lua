@@ -34,6 +34,7 @@ return {
                     }
                 }
             })
+            lspconfig.html.setup({})
 
 
             vim.diagnostic.config({
