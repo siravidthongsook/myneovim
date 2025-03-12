@@ -65,4 +65,4 @@ vim.api.nvim_set_keymap('n', '<leader>-', '<cmd>resize -5<CR>', { noremap = true
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = "Code Action" })
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition)
 vim.keymap.set("n", "<C-k>", vim.lsp.buf.hover)
-vim.keymap.set({'n','v'}, "<leader>ff", vim.lsp.buf.format, {desc= "Format code with lsp"})
+-- vim.keymap.set({'n','v'}, "<leader>ff", vim.lsp.buf.format, {desc= "Format code with lsp"})
