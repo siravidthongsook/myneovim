@@ -18,6 +18,7 @@ require('telescope').setup {
     }
   },
 }
+
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>lf', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>lk', builtin.keymaps, { desc = 'Telescope find files' })
